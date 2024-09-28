@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.saisie {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.saisie input {
+    width: 85%;
+    border-radius: 10px;
+    height: 35px;
+    border: 2px solid #4d4d4d98;
+    outline: none;
+    padding: 0 20px;
+}
+
+.saisie button {
+    width: 10%;
+    height: 35px;
+    border: none;
+    background: #2979fb;
+    border-radius: 10px;
+    color: #fff;
+}
