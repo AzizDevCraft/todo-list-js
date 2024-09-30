@@ -6,6 +6,7 @@
     <title>TO DO</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/0cde4900c8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="saisie">
@@ -15,9 +16,19 @@
         </form>
     </section>
     <section class="trie">
-        <button>Toutes</button>
-        <button>à faire</button>
-        <button>Faites</button>
+        <button class="default">Toutes</button>
+        <button class="todo">à faire</button>
+        <button class="done">terminer</button>
     </section>
+    <ul class="list-group">
+        <li class="todo-item">
+            <div class="part-1">
+                <input type="checkbox" id="tache1">
+                <label for="tache1">Tâche à faire</label>
+            </div>
+            <div class="poubelle"><i class="fa-solid fa-trash"></i></div>
+        </li>
+        
+    </ul>
 </body>
 </html>

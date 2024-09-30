@@ -62,7 +62,6 @@ button {
     border-right: 1px solid #2979fb;
 }
 
-
 .trie .done {
     border-radius: 0 10px 10px 0;
     border-right: 2px solid #2979fb;
@@ -73,3 +72,47 @@ button {
     border-left: 1px solid #2979fb;
     border-right: 1px solid #2979fb;
 }
+
+.list-group {
+    margin-top: 50px;
+    list-style: none;
+    border: solid #6f6c6c 1px;
+    padding: 0 10px;
+}
+
+.list-group .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.list-group .todo-item .part-1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.poubelle {
+    height: 25px;
+    width: 25px;
+    background: #f85f5f;
+    margin: 3px 0;
+    border-radius: 5px;
+    border: solid 1px transparent;
+    color: #fff;
+}
+
+.poubelle i {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.poubelle:hover {
+    color: #f85f5f;
+    background: #fff;
+    border: 1px solid #f85f5f;
+}
+
