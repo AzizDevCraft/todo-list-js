@@ -30,7 +30,7 @@ class ListItem {
 
     constructor (todo) {
         const li = CreatElement ("li", {class: "todo list-group-item d-flex align-items-center"})
-        const checkbox = CreatElement ("input", {class: "form-check-input", id: `todo-${todo.id}`, type: "checkbox", checked: todo.completed})
+        const checkbox = CreatElement ("input", {class: "form-check-input", id: `todo-${todo.id}`, type: "checkbox", checked: todo.completed ? '': null})
         const checkboxLabel = CreatElement ("label", {class: "ms-2 form-check-label", for: `todo-${todo.id}`})
         checkboxLabel.innerText = todo.title
         const button = CreatElement ("button", {class:"ms-auto btn btn-danger btn-sm"})
@@ -38,6 +38,10 @@ class ListItem {
         button. append (icon)
         li.append (checkbox, checkboxLabel, button)
         this.#element = li
+
+        button.addEventListener ("click", e => {
+            this.#element.remove ()
+        })
     }
 
     appendToo (element) {

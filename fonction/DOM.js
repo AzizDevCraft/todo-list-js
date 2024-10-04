@@ -7,7 +7,7 @@
 export function CreatElement (tagName, attributs = {}) {
     const balise = document.createElement (tagName)
     for (let [key, value] of Object.entries (attributs)) {
-        if (value !== false && value !== null)
+        if (value !== null)
         balise.setAttribute (key, value)
     }
 
