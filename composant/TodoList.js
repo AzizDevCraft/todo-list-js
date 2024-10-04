@@ -34,7 +34,8 @@ export class TodoList {
                 id : Date.now ()
             }
             const unaTodo = new ListItem (ObjetTodo)
-            unaTodo.appendToo (list)
+            unaTodo.prependToo (list)
+            e.currentTarget.reset()
         })
     }
 }
@@ -61,5 +62,9 @@ class ListItem {
 
     appendToo (element) {
         element.append (this.#element)
+    }
+
+    prependToo (element) {
+        element.prepend (this.#element)
     }
 }
