@@ -21,6 +21,21 @@ export class TodoList {
             const unaTodo = new ListItem (i)
             unaTodo.appendToo (list)
         }
+        const formInput = document.querySelector ("form")
+        formInput.addEventListener ("submit", e => {
+            e.preventDefault ()
+            const title = new FormData (e.currentTarget).get ("title").toString ().trim ()
+            if (title === "") {
+                return
+            }
+            const ObjetTodo = {
+                title: title, 
+                completed : false,
+                id : Date.now ()
+            }
+            const unaTodo = new ListItem (ObjetTodo)
+            unaTodo.appendToo (list)
+        })
     }
 }
 
